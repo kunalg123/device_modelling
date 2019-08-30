@@ -69,7 +69,7 @@ Math{
   RelErrControl
   Digits=4
   Notdamped=50
-  Iterations=50
+  Iterations=100
   Transient=BE
   Method=Blocked
   SubMethod=ParDiSo
