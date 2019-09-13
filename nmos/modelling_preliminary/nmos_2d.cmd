@@ -30,9 +30,9 @@ pdbSet Grid SnMesh min.normal.size 1.0e-3
 pdbSet Grid SnMesh normal.growth.ratio.2d 1.4
 
 #p-well, anti-punchthrough & Vt adjustment implants
-implant Boron dose=2.0e15<cm-2> energy=200<keV> tilt=0 rotation=0
-implant Boron dose=1.0e12<cm-2> energy=80<keV> tilt=0 rotation=0
-implant Boron dose=1.0e12<cm-2> energy=25<keV> tilt=0 rotation=0
+implant Boron dose=1.0e16<cm-2> energy=200<keV> tilt=0 rotation=0
+implant Boron dose=1.0e12<cm-2> energy=60<keV> tilt=0 rotation=0
+implant Boron dose=1.0e12<cm-2> energy=60<keV> tilt=0 rotation=0
 
 #p-well: RTA of channel implants
 diffuse temperature=1050<C> time=10.0<s>
@@ -41,7 +41,7 @@ diffuse temperature=1050<C> time=10.0<s>
 struct tdr=1_Pwell FullD; # p-well
 
 #Growing gate oxide
-diffuse temperature=800<C> time=10.0<min> O2
+diffuse temperature=800<C> time=120.0<min> O2
 select z=1
 layers
 struct tdr=2_Oxidation FullD; # GateOx
