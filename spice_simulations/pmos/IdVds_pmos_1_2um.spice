@@ -1,0 +1,23 @@
+*** MODEL Descriptions ***
+
+*** NETLIST Description ***
+
+M1 vdd n1 0 0 nmos W=1.8u L=1.2u
+
+R1 in n1 55
+
+Vdd vdd 0 2.5
+
+Vin in 0 2.5
+
+*** .include mosis_1um_model.mod ***
+
+.LIB "tsmc_025um_model.mod" CMOS_MODELS
+
+*** SIMULATION Commands ***
+
+.op
+
+.dc Vdd 0 2.5 0.1 Vin 0 2.5 0.5
+
+.end
