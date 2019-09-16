@@ -1,0 +1,8 @@
+*** MODEL Descriptions ***
+
+*** NETLIST Description ***
+.subckt cmos_inverter my_out my_in my_vdd my_vss 
+M1 my_out my_in my_vdd my_vdd pmos W=0.375u L=0.25u
+M2 my_out my_in my_vss my_vss nmos W=0.375u L=0.25u
+
+.ends
