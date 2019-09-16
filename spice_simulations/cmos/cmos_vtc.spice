@@ -1,0 +1,17 @@
+*** MODEL Descriptions ***
+
+*** NETLIST Description ***
+.LIB "tsmc_025um_model.mod" CMOS_MODELS
+.include cmos.sub
+X1 out in vdd 0 cmos_inverter
+
+cload out 0 10f
+
+Vdd vdd 0 2.5
+Vin in 0 2.5
+*** SIMULATION Commands ***
+.op
+.dc Vin 0 2.5 0.000005
+*** .include tsmc_025um_model.mod  ***
+.end
+
